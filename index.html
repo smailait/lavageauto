@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavage Auto à Domicile</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<div id="contact-confirmation-modal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close-modal" id="close-contact-modal">&times;</span>
+    <div class="modal-body" id="contact-confirmation-text"></div>
+  </div>
+</div>
+
+<body>
+    
+    <header id="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <i class="fas fa-car-wash"></i> Lavage Auto à Domicile
+                </a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
+                    <li><a href="#gallerie" class="nav-link">Gallerie</a></li>
+                    <li><a href="#temoignages" class="nav-link">Témoignages</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#reserver" class="btn-reserver">Réserver</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+
+        <div class="hero" id="accueil">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Lavage auto à domicile professionnel</h1>
+                    <p>Nous venons à vous pour redonner à votre véhicule son éclat d'origine</p>
+                    <div class="hero-buttons">
+                        <a href="#reserver" class="btn btn-primary">Réserver maintenant</a>
+                        <a href="#services" class="btn btn-outline">Nos services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="avantages" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pourquoi nous choisir ?</h2>
+                <p>Des avantages qui font la différence</p>
+            </div>
+            <div class="avantages-grid">
+                <div class="avantage-item">
+                    <div class="avantage-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Gain de temps</h3>
+                    <p>Nous venons à vous, plus besoin de vous déplacer ou d'attendre</p>
+                </div>
+                <div class="avantage-item">
+                    <div class="avantage-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Qualité professionnelle</h3>
+                    <p>Équipement et produits premium pour des résultats impeccables</p>
+                </div>
+                <div class="avantage-item">
+                    <div class="avantage-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Écologique</h3>
+                    <p>Produits respectueux de l'environnement et économie d'eau</p>
+                </div>
+                <div class="avantage-item">
+                    <div class="avantage-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Flexibilité</h3>
+                    <p>Réservez le jour et l'heure qui vous conviennent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos services</h2>
+                <p>Des solutions adaptées à vos besoins</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Formule Express</h3>
+                    <p>Lavage extérieur complet, séchage et nettoyage des vitres</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Lavage carrosserie</li>
+                        <li><i class="fas fa-check"></i> Nettoyage jantes</li>
+                        <li><i class="fas fa-check"></i> Vitres extérieures</li>
+                        <li><i class="fas fa-check"></i> Séchage complet</li>
+                    </ul>
+                    <a href="#reserver" class="btn btn-primary">Réserver</a>
+                </div>
+                <div class="service-card highlighted">
+                    <div class="service-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="popular-tag">Populaire</div>
+                    <h3>Formule Intégrale</h3>
+                    <p>Traitement complet intérieur et extérieur de votre véhicule</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tout de la formule Express</li>
+                        <li><i class="fas fa-check"></i> Aspiration complète</li>
+                        <li><i class="fas fa-check"></i> Nettoyage tableau de bord</li>
+                        <li><i class="fas fa-check"></i> Nettoyage des sièges</li>
+                        <li><i class="fas fa-check"></i> Toutes les vitres</li>
+                    </ul>
+                    <a href="#reserver" class="btn btn-primary">Réserver</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3>Formule Premium</h3>
+                    <p>Le soin ultime avec protection et traitement professionnel</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tout de la formule Intégrale</li>
+                        <li><i class="fas fa-check"></i> Polissage carrosserie</li>
+                        <li><i class="fas fa-check"></i> Traitement céramique</li>
+                        <li><i class="fas fa-check"></i> Protection cuir/tissus</li>
+                        <li><i class="fas fa-check"></i> Désodorisation</li>
+                    </ul>
+                    <a href="#reserver" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarifs" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos tarifs</h2>
+                <p>Des prix transparents et sans surprise</p>
+            </div>
+            <div class="tarifs-grid">
+                <div class="tarif-card">
+                    <h3>Voiture Citadine</h3>
+                    <div class="price-container">
+                        <div class="price-item">
+                            <span class="service-name">Express</span>
+                            <span class="price">30€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Intégrale</span>
+                            <span class="price">50€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Premium</span>
+                            <span class="price">80€</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarif-card">
+                    <h3>Berline / SUV Compact</h3>
+                    <div class="price-container">
+                        <div class="price-item">
+                            <span class="service-name">Express</span>
+                            <span class="price">40€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Intégrale</span>
+                            <span class="price">60€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Premium</span>
+                            <span class="price">100€</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarif-card">
+                    <h3>SUV / Monospace</h3>
+                    <div class="price-container">
+                        <div class="price-item">
+                            <span class="service-name">Express</span>
+                            <span class="price">2000DA</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Intégrale</span>
+                            <span class="price">3000DA</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="service-name">Premium</span>
+                            <span class="price">4000DA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à redonner vie à votre véhicule ?</h2>
+                <p>Réservez dès maintenant et bénéficiez de 10% de réduction sur votre première réservation</p>
+                <a href="#reserver" class="btn btn-light">Réserver maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallerie" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre travail</h2>
+                <p>Des résultats visibles et durables</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <img src="image\avant.png" alt="Avant lavage" class="before">
+                        <img src="image\apres.png" alt="Après lavage" class="after">
+                    </div>
+                    <div class="slider-handle"></div>
+                    <div class="labels">
+                        <span class="before-label">Avant</span>
+                        <span class="after-label">Après</span>
+                    </div>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="image\img1.jpeg" alt="Intérieur propre">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image\OIP.jpeg" alt="Détail jante">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image\img3.jpg" alt="Polissage carrosserie">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image\imggente.avif" alt="Résultat final">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="temoignages" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Témoignages</h2>
+                <p>Ce que nos clients disent de nous</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Service exceptionnel ! Ma voiture n'a jamais été aussi propre. Je recommande vivement la formule intégrale."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>anes amrouche</h4>
+                                <p>Client depuis 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+    <div class="testimonial-content">
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>"L'équipe est arrivée à l'heure, très professionnelle. Ma voiture brille comme jamais !"</p>
+    </div>
+    <div class="testimonial-author">
+        <div class="author-info">
+            <h4>Karima Ziani</h4>
+            <p>Cliente depuis 2025</p>
+        </div>
+    </div>
+</div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>"J'étais sceptique pour le lavage à domicile, mais le résultat m'a convaincu. Gain de temps considérable et travail soigné."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Émilie Leroy</h4>
+                                <p>Cliente depuis 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button id="prev-testimonial" class="testimonial-control"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-testimonial" class="testimonial-control"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Questions fréquentes</h2>
+                <p>Tout ce que vous devez savoir sur nos services</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quelle quantité d'eau utilisez-vous ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Notre système de lavage à domicile utilise moins de 20 litres d'eau par véhicule, contrairement aux stations de lavage traditionnelles qui en utilisent plus de 150 litres.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quelles zones géographiques couvrez-vous ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous intervenons dans un rayon de 30 km autour de Bejaia. Pour vérifier si votre adresse est dans notre zone de service, contactez-nous ou utilisez notre formulaire de réservation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Vos produits sont-ils écologiques ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, tous nos produits sont biodégradables et respectueux de l'environnement. Nous avons sélectionné des formules efficaces qui ne compromettent pas la planète.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Combien de temps dure un lavage complet ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La durée dépend de la formule choisie et de la taille du véhicule. En moyenne, comptez 45 minutes pour une formule Express, 1h30 pour une formule Intégrale et 2h30 pour une formule Premium.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment puis-je payer ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous acceptons les paiements par carte bancaire, espèces ou virement. Le paiement s'effectue une fois le service terminé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reserver" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Réserver un lavage</h2>
+                <p>En quelques clics, votre véhicule retrouvera son éclat</p>
+            </div>
+            <div class="reservation-container">
+                <form id="reservation-form" class="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom complet</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date souhaitée</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="heure">Heure souhaitée</label>
+                            <select id="heure" name="heure" required>
+                                <option value="">Sélectionner une heure</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="type-vehicule">Type de véhicule</label>
+                            <select id="type-vehicule" name="type-vehicule" required>
+                                <option value="">Sélectionner un type</option>
+                                <option value="citadine">Citadine</option>
+                                <option value="berline">Berline / SUV Compact</option>
+                                <option value="suv">SUV / Monospace</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="adresse">Adresse complète</label>
+                            <input type="text" id="adresse" name="adresse" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formule">Formule souhaitée</label>
+                            <select id="formule" name="formule" required>
+                                <option value="">Sélectionner une formule</option>
+                                <option value="express">Express</option>
+                                <option value="integrale">Intégrale</option>
+                                <option value="premium">Premium</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="commentaire">Commentaires ou demandes spéciales</label>
+                        <textarea id="commentaire" name="commentaire" rows="3"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">Confirmer la réservation</button>
+                    </div>
+                    <div id="confirmation-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-header">
+      <i class="fas fa-check-circle"></i>
+      <h2>Réservation Confirmée</h2>
+    </div>
+    <div class="modal-body">
+      <p>Votre réservation a été reçue avec succès.</p>
+      <p><strong>Date :</strong> <span id="confirm-date"></span></p>
+      <p><strong>Heure :</strong> <span id="confirm-time"></span></p>
+      <p><strong>Formule :</strong> <span id="confirm-formule"></span></p>
+    </div>
+    <div class="modal-footer">
+      <button id="close-confirmation" class="btn btn-primary">Fermer</button>
+    </div>
+  </div>
+</div>
+
+                </form>
+                <div class="reservation-info">
+                    <div class="info-card">
+                        <h3>Comment ça marche ?</h3>
+                        <ul class="process-list">
+                            <li>
+                                <span class="process-number">1</span>
+                                <div class="process-text">
+                                    <h4>Réservez en ligne</h4>
+                                    <p>Complétez le formulaire avec vos coordonnées et préférences</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="process-number">2</span>
+                                <div class="process-text">
+                                    <h4>Confirmation</h4>
+                                    <p>Nous vous confirmons le rendez-vous par SMS et email</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="process-number">3</span>
+                                <div class="process-text">
+                                    <h4>Service à domicile</h4>
+                                    <p>Notre équipe vient chez vous au jour et à l'heure convenus</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="process-number">4</span>
+                                <div class="process-text">
+                                    <h4>Résultat impeccable</h4>
+                                    <p>Profitez de votre véhicule parfaitement propre</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Besoin d'informations ? Contactez-nous</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Téléphone</h3>
+                            <p>+213795718487</p>
+                            <p>Lun-Sam: 8h-19h</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>smail.aitouaret@se.univ-bejaia.dz</p>
+                            <p>Réponse sous 24h</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Zone de service</h3>
+                            <p>Bejaia </p>
+                            <p>Et ces environs</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+    <h3>Suivez-nous</h3>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+</div>
+
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form" method="post" action="contact_process.php">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-nom">Nom</label>
+                                <input type="text" id="contact-nom" name="contact-nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="contact-email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-sujet">Sujet</label>
+                            <input type="text" id="contact-sujet" name="contact-sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">
+                        <i class="fas fa-car-wash"></i> Lavage auto a domicile
+                    </a>
+                    <p>Lavage auto à domicile professionnel</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#tarifs">Tarifs</a></li>
+                            <li><a href="#gallerie">Gallerie</a></li>
+                            <li><a href="#temoignages">Témoignages</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#services">Formule Express</a></li>
+                            <li><a href="#services">Formule Intégrale</a></li>
+                            <li><a href="#services">Formule Premium</a></li>
+                            <li><a href="#reserver">Réservation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="tel:0123456789">+231795718487</a></li>
+                            <li><a href="smail.aitouaret@se.univ-bejaia.dz">smail.aitouaret@se.univ-bejaia.dz</a></li>
+                            <li><a href="#contact">Formulaire de contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lavage Auto a domicile - Tous droits réservés</p>
+                <div class="legal-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Réservation Confirmée</h2>
+            </div>
+            <div class="modal-body">
+                <p>Votre réservation a été reçue avec succès. Nous vous contacterons rapidement pour confirmer les détails.</p>
+                <div class="reservation-details">
+                    <p><strong>Date:</strong> <span id="confirm-date"></span></p>
+                    <p><strong>Heure:</strong> <span id="confirm-time"></span></p>
+                    <p><strong>Formule:</strong> <span id="confirm-formule"></span></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="close-confirmation" class="btn btn-primary">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="jsscript.js"></script>
+   
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+</body>
+</html>
